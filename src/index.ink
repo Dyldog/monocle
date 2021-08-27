@@ -26,14 +26,9 @@ findDocs := searcher.findDocs
 
 ` modules `
 Modules := {
-	www: load('../modules/www')
-	entr: load('../modules/entr')
-	mira: load('../modules/mira')
 	tweets: load('../modules/tweets')
-	pocket: load('../modules/pocket')
-	lifelog: load('../modules/lifelog')
-	ligature: load('../modules/ligature')
-	ideaflow: load('../modules/ideaflow')
+	evernote: load('../modules/evernote')
+	zettel: load('../modules/zettels')
 }
 ModuleState := {
 	loadedModules: 0

@@ -42,6 +42,7 @@ getMDDocs := (folder, idPrefix, withDocs) => dir(folder, (desc) => (
 						true -> read(filePath, 0, file.len, (fileRead) => (
 							lines := split(string(fileRead.data), string('
 '))
+							`BUG: Need to actually find first line with # in it`
 							noteTitle := trim(trimPrefix(lines.0, '#'), ' ')
 
 							fileName := trim(file.name, '.md')

@@ -1,0 +1,240 @@
+ink src/index.ink
+[tweets] re-generating index
+[evernote] re-generating index
+[zettel] re-generating index
+0 tweets tokenized...
+[31;1mruntime error: [31;22merror in callback to dir(), len() takes a string or composite value, but got () in modules/markdown.ink[0;0m
+make: *** [index] Error 2
+ink src/main.ink
+Monocle started, listening on 0.0.0.0:9999
+make: *** [run] Terminated: 15
+ink src/index.ink
+[tweets] re-generating index
+[evernote] re-generating index
+[zettel] re-generating index
+0 tweets tokenized...
+[31;1mruntime error: [31;22merror in callback to dir(), len() takes a string or composite value, but got () in modules/markdown.ink[0;0m
+make: *** [index] Error 2
+ink src/main.ink
+Monocle started, listening on 0.0.0.0:9999
+GET: /?q=a
+GET: /static/css/main.css
+GET: /static/ink/bundle.js
+GET: /indexes/docs.json
+GET: /indexes/index.json
+make: *** [run] Terminated: 15
+ink src/index.ink
+[tweets] re-generating index
+[evernote] re-generating index
+[zettel] re-generating index
+0 tweets tokenized...
+[main] persisting docs...
+[main] indexing docs...
+[main] persisting index...
+done.
+# remove control characters that sneak into content. These are filtered out
+# in the index but not in doc sources, and trips up JSON parsers.
+LC_ALL=C tr -d '[:cntrl:]' < static/indexes/docs.json > /tmp/docs.json
+mv /tmp/docs.json static/indexes/docs.json
+# gzip
+gzip --best < static/indexes/docs.json > static/indexes/docs.json.gz
+gzip --best < static/indexes/index.json > static/indexes/index.json.gz
+# brotli
+brotli -kZf static/indexes/docs.json
+setting group failed for [static/indexes/docs.json.br]: Operation not permitted
+brotli -kZf static/indexes/index.json
+ink src/main.ink
+Monocle started, listening on 0.0.0.0:9999
+make: *** [run] Terminated: 15
+ink src/index.ink
+[evernote] re-generating index
+[tweets] re-generating index
+[zettel] re-generating index
+0 tweets tokenized...
+[main] persisting docs...
+[main] indexing docs...
+[main] persisting index...
+done.
+# remove control characters that sneak into content. These are filtered out
+# in the index but not in doc sources, and trips up JSON parsers.
+LC_ALL=C tr -d '[:cntrl:]' < static/indexes/docs.json > /tmp/docs.json
+mv /tmp/docs.json static/indexes/docs.json
+# gzip
+gzip --best < static/indexes/docs.json > static/indexes/docs.json.gz
+gzip --best < static/indexes/index.json > static/indexes/index.json.gz
+# brotli
+brotli -kZf static/indexes/docs.json
+setting group failed for [static/indexes/docs.json.br]: Operation not permitted
+brotli -kZf static/indexes/index.json
+xcrun: error: active developer path ("/Applications/Xcode_12.5.app/Contents/Developer") does not exist
+Use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, or use `xcode-select --install` to install the standalone command line developer tools.
+See `man xcode-select` for more details.
+xcrun: error: active developer path ("/Applications/Xcode_12.5.app/Contents/Developer") does not exist
+Use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, or use `xcode-select --install` to install the standalone command line developer tools.
+See `man xcode-select` for more details.
+xcrun: error: active developer path ("/Applications/Xcode_12.5.app/Contents/Developer") does not exist
+Use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, or use `xcode-select --install` to install the standalone command line developer tools.
+See `man xcode-select` for more details.
+ink src/index.ink
+[tweets] re-generating index
+[evernote] re-generating index
+[zettel] re-generating index
+0 tweets tokenized...
+[main] persisting docs...
+[main] indexing docs...
+[main] persisting index...
+done.
+# remove control characters that sneak into content. These are filtered out
+# in the index but not in doc sources, and trips up JSON parsers.
+LC_ALL=C tr -d '[:cntrl:]' < static/indexes/docs.json > /tmp/docs.json
+mv /tmp/docs.json static/indexes/docs.json
+# gzip
+gzip --best < static/indexes/docs.json > static/indexes/docs.json.gz
+gzip --best < static/indexes/index.json > static/indexes/index.json.gz
+# brotli
+brotli -kZf static/indexes/docs.json
+setting group failed for [static/indexes/docs.json.br]: Operation not permitted
+brotli -kZf static/indexes/index.json
+ink src/main.ink
+Monocle started, listening on 0.0.0.0:9999
+GET: /?q=I%20was%20on%20a%20shelf
+GET: /static/css/main.css
+GET: /static/ink/bundle.js
+GET: /indexes/docs.json
+GET: /indexes/index.json
+GET: /apple-touch-icon-precomposed.png
+GET: /apple-touch-icon.png
+make: *** [run] Terminated: 15
+ink src/index.ink
+[tweets] re-generating index
+[evernote] re-generating index
+[zettel] re-generating index
+0 tweets tokenized...
+[main] persisting docs...
+[main] indexing docs...
+[main] persisting index...
+done.
+# remove control characters that sneak into content. These are filtered out
+# in the index but not in doc sources, and trips up JSON parsers.
+LC_ALL=C tr -d '[:cntrl:]' < static/indexes/docs.json > /tmp/docs.json
+mv /tmp/docs.json static/indexes/docs.json
+# gzip
+gzip --best < static/indexes/docs.json > static/indexes/docs.json.gz
+gzip --best < static/indexes/index.json > static/indexes/index.json.gz
+# brotli
+brotli -kZf static/indexes/docs.json
+setting group failed for [static/indexes/docs.json.br]: Operation not permitted
+brotli -kZf static/indexes/index.json
+ink src/main.ink
+Monocle started, listening on 0.0.0.0:9999
+ink src/index.ink
+[tweets] re-generating index
+[evernote] re-generating index
+[zettel] re-generating index
+0 tweets tokenized...
+[main] persisting docs...
+[main] indexing docs...
+[main] persisting index...
+done.
+# remove control characters that sneak into content. These are filtered out
+# in the index but not in doc sources, and trips up JSON parsers.
+LC_ALL=C tr -d '[:cntrl:]' < static/indexes/docs.json > /tmp/docs.json
+mv /tmp/docs.json static/indexes/docs.json
+# gzip
+gzip --best < static/indexes/docs.json > static/indexes/docs.json.gz
+gzip --best < static/indexes/index.json > static/indexes/index.json.gz
+# brotli
+brotli -kZf static/indexes/docs.json
+setting group failed for [static/indexes/docs.json.br]: Operation not permitted
+brotli -kZf static/indexes/index.json
+ink src/main.ink
+Monocle started, listening on 0.0.0.0:9999
+make: *** [run] Terminated: 15
+ink src/index.ink
+[tweets] re-generating index
+[evernote] re-generating index
+[zettel] re-generating index
+0 tweets tokenized...
+[main] persisting docs...
+[main] indexing docs...
+[main] persisting index...
+done.
+# remove control characters that sneak into content. These are filtered out
+# in the index but not in doc sources, and trips up JSON parsers.
+LC_ALL=C tr -d '[:cntrl:]' < static/indexes/docs.json > /tmp/docs.json
+mv /tmp/docs.json static/indexes/docs.json
+# gzip
+gzip --best < static/indexes/docs.json > static/indexes/docs.json.gz
+gzip --best < static/indexes/index.json > static/indexes/index.json.gz
+# brotli
+brotli -kZf static/indexes/docs.json
+setting group failed for [static/indexes/docs.json.br]: Operation not permitted
+brotli -kZf static/indexes/index.json
+ink src/main.ink
+Monocle started, listening on 0.0.0.0:9999
+ink src/index.ink
+[zettel] re-generating index
+[evernote] re-generating index
+[tweets] re-generating index
+0 tweets tokenized...
+[main] persisting docs...
+[main] indexing docs...
+[main] persisting index...
+done.
+# remove control characters that sneak into content. These are filtered out
+# in the index but not in doc sources, and trips up JSON parsers.
+LC_ALL=C tr -d '[:cntrl:]' < static/indexes/docs.json > /tmp/docs.json
+mv /tmp/docs.json static/indexes/docs.json
+# gzip
+gzip --best < static/indexes/docs.json > static/indexes/docs.json.gz
+gzip --best < static/indexes/index.json > static/indexes/index.json.gz
+# brotli
+brotli -kZf static/indexes/docs.json
+setting group failed for [static/indexes/docs.json.br]: Operation not permitted
+brotli -kZf static/indexes/index.json
+ink src/main.ink
+Monocle started, listening on 0.0.0.0:9999
+ink src/index.ink
+[tweets] re-generating index
+[zettel] re-generating index
+[evernote] re-generating index
+0 tweets tokenized...
+[main] persisting docs...
+[main] indexing docs...
+[main] persisting index...
+done.
+# remove control characters that sneak into content. These are filtered out
+# in the index but not in doc sources, and trips up JSON parsers.
+LC_ALL=C tr -d '[:cntrl:]' < static/indexes/docs.json > /tmp/docs.json
+mv /tmp/docs.json static/indexes/docs.json
+# gzip
+gzip --best < static/indexes/docs.json > static/indexes/docs.json.gz
+gzip --best < static/indexes/index.json > static/indexes/index.json.gz
+# brotli
+brotli -kZf static/indexes/docs.json
+setting group failed for [static/indexes/docs.json.br]: Operation not permitted
+brotli -kZf static/indexes/index.json
+ink src/main.ink
+Monocle started, listening on 0.0.0.0:9999
+ink src/index.ink
+[zettel] re-generating index
+[tweets] re-generating index
+[evernote] re-generating index
+0 tweets tokenized...
+[main] persisting docs...
+[main] indexing docs...
+[main] persisting index...
+done.
+# remove control characters that sneak into content. These are filtered out
+# in the index but not in doc sources, and trips up JSON parsers.
+LC_ALL=C tr -d '[:cntrl:]' < static/indexes/docs.json > /tmp/docs.json
+mv /tmp/docs.json static/indexes/docs.json
+# gzip
+gzip --best < static/indexes/docs.json > static/indexes/docs.json.gz
+gzip --best < static/indexes/index.json > static/indexes/index.json.gz
+# brotli
+brotli -kZf static/indexes/docs.json
+setting group failed for [static/indexes/docs.json.br]: Operation not permitted
+brotli -kZf static/indexes/index.json
+ink src/main.ink
+Monocle started, listening on 0.0.0.0:9999

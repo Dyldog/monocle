@@ -1,3 +1,5 @@
+september := ~/Code/Theirs/september/bin/main.ink
+
 all: run
 
 # run app server
@@ -6,7 +8,7 @@ run:
 
 # build dependencies
 build-libs:
-	september translate \
+	$(september) translate \
 		lib/stub.ink \
 		vendor/std.ink \
 		vendor/str.ink \
@@ -15,7 +17,7 @@ build-libs:
 		> static/ink/lib.js
 
 build-monocle:
-	september translate \
+	$(september) translate \
 		lib/tokenizer.ink \
 		lib/indexer.ink \
 		lib/ranker.ink \
@@ -28,7 +30,7 @@ build:
 	cat static/js/ink.js \
 		static/js/torus.min.js \
 		> static/ink/vendor.js
-	september translate \
+	$(september) translate \
 		lib/torus.js.ink \
 		src/app.js.ink \
 		| tee /dev/stderr > static/ink/common.js

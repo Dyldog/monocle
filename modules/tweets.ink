@@ -26,7 +26,7 @@ tokenFrequencyMap := tokenizer.tokenFrequencyMap
 
 Newline := char(10)
 
-TweetsFilePath := '/tmp/tweets.json'
+TweetsFilePath := env().HOME + '/Code/Theirs/monocle/data/tweets.json'
 
 getDocs := withDocs => readFile(TweetsFilePath, file => file :: {
 	() -> (
